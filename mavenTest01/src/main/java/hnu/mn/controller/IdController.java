@@ -20,6 +20,7 @@ public class IdController {
 	public String showID(HttpSession session) {
 		List<Id> showList = showIdServiceImpl.showList();
 		System.out.println(showList);
+		System.out.println("测试git");
 		if (showList!=null) {
 			session.setAttribute("IDList", showList);
 			return "redirect:/index.jsp";
